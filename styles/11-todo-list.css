@@ -1,0 +1,39 @@
+body {
+    font-family: Arial;
+}
+
+.add-button{
+    border: none;
+    color: green;
+    padding: 7px 10px;
+    border-radius: 5px;
+}
+
+.delete-todo-button {
+    border: none;
+    color: red;
+    padding: 7px 10px;
+    border-radius: 5px;
+}
+
+.heading {
+    font-family: "Comic Sans MS";
+    font-size: x-large;
+}
+
+.name-input {
+    font-size: 15px;
+    padding: 6px;
+}
+
+.todo-grid,
+.todo-input-grid{
+    display: grid;
+    grid-template-columns: 200px 150px 100px;
+    column-gap: 10px;
+    row-gap: 10px;
+    align-content: center;
+}
+.todo-input-grid {
+    margin-bottom: 10px;
+}
