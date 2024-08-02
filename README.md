@@ -24,23 +24,6 @@ To get the most out of this repository, you should have a basic understanding of
 - Basic command line operations
 - How to open a file in a web browser
 
-### Installation
-
-1. **Clone the repository:**
-
-    ```bash
-    git clone https://github.com/your-username/basic-web-concepts.git
-    cd basic-web-concepts
-    ```
-
-2. **Open the project in your text editor:**
-
-    ```bash
-    code .
-    ```
-
-    Replace `code` with your text editor's command if you're not using VS Code.
-
 ## Folder Contents
 
 ### HTML Folder
