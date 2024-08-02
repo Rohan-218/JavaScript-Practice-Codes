@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Advanced functions</title>
+</head>
+<body>
+  <button onclick="" class="js-button">Click</button>
+
+  <script>
+    /*
+    const buttonElement = document.querySelector('.js-button');
+
+    const eventListener = () => console.log('Click 2');
+
+    buttonElement.addEventListener('click', () => console.log('Click'));
+
+    buttonElement.addEventListener('click',eventListener);
+
+    buttonElement.removeEventListener('click', eventListener);
+    */
+    /*
+    greeting();
+    function greeting() {
+      console.log('hello');
+    }
+    greeting();
+
+    console.log(typeof greeting);
+
+    const function1 = function() {
+      console.log('Hello Again');
+    }
+    console.log(function1)
+    function1();
+
+    const obj1 = {
+      num: 2,
+      fun: function() {
+        console.log("Hello Yet Again");
+      }
+    };
+    obj1.fun();
+
+    function display(Rakshita) {
+      console.log(Rakshita);
+    }
+    display('Pagal');
+
+    function run(pass) {
+      pass();
+    }
+    run(function() {
+      console.log('Hello')
+    });
+
+    setTimeout(function() {
+      console.log('Timeout');
+      console.log('Timeout....');
+    }, 2000);
+
+    console.log('This is actually called after Timeout.');
+
+    setInterval(function() {
+      console.log('Interval');
+    }, 3000);
+    console.log('This is After Interval.')
+
+    [
+            'make dinner',
+            'wash',
+            'watch'
+    ].forEach((value, index) => {
+      if(value === 'wash') {
+        return;
+      }
+      console.log(value, index);
+    });
+
+    const regularFunction = function(p1,p2) {
+      console.log('Hello');
+      return 5;
+    }
+    const value = regularFunction(1,7);
+    const arrowFunction = (value) => {
+      console.log('Hello');
+      console.log(value);
+    }
+    arrowFunction(value);
+
+    const onepara = parameter => {
+      console.log(parameter + 1);
+    }
+    onepara(5);
+
+    const oneLine = value => console.log(value+3);
+    oneLine(7);
+
+    const obj2 = {
+      method () {
+
+      }
+    }
+    */
+
+    console.log([1, 2,-3].filter(value=> {
+      /*
+      if(value >= 0)
+        return true;
+      else
+        return false;
+      */
+      return value >= 0;
+    }));
+
+    console.log([1,1,3].map(value => value*2 ));
+  </script>
+</body>
+</html>

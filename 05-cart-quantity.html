@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Variables</title>
+    <style>
+
+      .lightcoral-button {
+        background-color: lightcoral;
+          color: darkred;
+          border-color: grey;
+      }
+
+      .lightgreen-button {
+        background-color: lightgreen;
+          color: green;
+          border-color: grey;
+      }
+
+      button {
+        background-color: lightblue;
+          color: mediumblue;
+          border-color: grey;
+      }
+    </style>
+  </head>
+  <body>
+    <button class ="lightgreen-button" onclick="
+      console.log(`Cart Quantity : ${cartQuantity}`);
+    ">Show Quantity</button>
+    <button class ="lightgreen-button" onclick="
+      cartQuantity++ ;
+      console.log(`Cart Quantity : ${cartQuantity}`);
+    ">Add to Cart</button>
+    <button onclick="
+      cartQuantity += 2;
+      console.log(`Cart Quantity : ${cartQuantity}`);
+      ">+2</button>
+    <button onclick="
+      cartQuantity += 3;
+      console.log(`Cart Quantity : ${cartQuantity}`);
+      ">+3</button>
+    <button class="lightcoral-button" onclick="
+      cartQuantity = 0;
+      console.log('Cart was reset');
+      console.log(`Cart Quantity : ${cartQuantity}`);
+    ">Reset Cart</button>
+
+    <script>
+      cartQuantity = 0;
+    </script>
+  </body>
+</html>
