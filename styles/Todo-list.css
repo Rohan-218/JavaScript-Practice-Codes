@@ -3,10 +3,19 @@ body {
     background-size: 20px 20px;
     font-weight: bold;
     color: rgb(50,50,50);
+    justify-content: center;
+}
+
+.flex-container {
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 .heading {
-    font-family: "Comic Sans MS", serif;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    font-family: "Comic Neue", cursive;
     text-shadow: 4px 5px dimgrey;
     font-size: 30px;
     text-align: center;
@@ -17,14 +26,14 @@ body {
 
 .add-todo-grid {
     display: grid;
-    grid-template-columns: 200px 220px 50px;
+    grid-template-columns: 100px 100px 100px;
     row-gap: 50px;
-    column-gap: 10px;
+    column-gap: 110px;
     justify-content: center;
     align-content: center;
-    margin: 0 0 -16px 0;
+    margin: 0;
     background-color: #c7b6e6;
-    padding: 50px;
+    padding: 50px 0 50px 0;
     border-top: rgb(170, 156, 188);
     border-top-style: solid ;
     height: 60px;
@@ -54,7 +63,7 @@ body {
     border-radius: 5px;
     border-color: #abacf6;
     width: 75px;
-    margin-left: 15px;
+    margin-left: 25px;
     height: 35px;
     align-self: center;
 }
@@ -80,34 +89,22 @@ body {
     column-gap: 25px;
     row-gap: 25px;
     font-size: 20px;
-    /*margin-left: -40px;*/
     word-wrap: break-word;
 }
 
-@media (min-width: 920px) and (max-width: 1374px) {
-    .todo-list {
-        grid-template-columns: 50px 420px 170px 70px;
-    }
-}
-
-@media (min-device-width: 300px) and (max-device-width: 520px) {
+@media (min-width: 300px) and (max-width: 530px) {
     .add-todo-grid {
-        grid-template-columns: 100px 100px 50px;
+        grid-template-columns: 50px 50px 50px;
         padding-left: 0;
+        justify-content: center;
     }
 
-    .name-input,
+    .name-input {
+        width: 120px;
+    }
+
     .due-date-input {
-        width: 100px;
-    }
-
-    .due-date-input {
-        margin-left: 20px;
-    }
-
-    .add-button {
-        width: 50px;
-        margin-left: 40px;
+        width: 120px;
     }
 
     .todo-list {
@@ -115,10 +112,48 @@ body {
     }
 }
 
+@media (min-width: 645px) {
+    .add-todo-grid {
+        grid-template-columns: 200px 220px 50px;
+        column-gap: 10px;
+        padding: 60px;
+    }
+}
+
+@media (min-width: 920px) and (max-width: 1374px) {
+    .todo-list {
+        grid-template-columns: 50px 420px 170px 70px;
+    }
+
+    .add-todo-grid {
+        grid-template-columns: 250px 250px 50px;
+        column-gap: 10px;
+    }
+
+    .name-input {
+        width: 200px;
+        height: 50px
+    }
+
+    .due-date-input {
+        width: 200px;
+        height: 50px
+    }
+}
+
 @media (min-width: 1375px) {
     .todo-list {
         display: grid;
         grid-template-columns: 100px 700px 170px 70px;
+    }
+
+    .add-todo-grid {
+        grid-template-columns: 220px 210px 50px;
+    }
+    .due-date-input,
+    .name-input{
+        width: 200px;
+        height: 50px;
     }
 }
 
