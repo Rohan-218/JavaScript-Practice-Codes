@@ -6,22 +6,23 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles/Todo-list.css">
 </head>
 <body>
 
-  <div class="heading">
-    <h1>Todo List</h1>
-  </div>
+  <div class="flex-container">
+    <div class="heading">
+      <h1>Todo List</h1>
+    </div>
 
-  <div class="add-todo-grid">
-    <input class="name-input js-name-input" required type="text" placeholder="Enter here">
-    <input type="date" class="js-due-date-input due-date-input">
-    <button class="add-button js-add-button">Add</button>
+    <div class="add-todo-grid">
+      <input class="name-input js-name-input" required type="text" placeholder="Enter here">
+      <input type="date" class="js-due-date-input due-date-input">
+      <button class="add-button js-add-button">Add</button>
+    </div>
   </div>
-
   <ul>
       <div class="container">
         <div class="js-todo-list todo-list"></div>
