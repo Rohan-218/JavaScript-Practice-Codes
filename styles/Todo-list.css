@@ -90,6 +90,31 @@ body {
     }
 }
 
+@media (min-device-width: 300px) and (max-device-width: 520px) {
+    .add-todo-grid {
+        grid-template-columns: 100px 100px 50px;
+        padding-left: 0;
+    }
+
+    .name-input,
+    .due-date-input {
+        width: 100px;
+    }
+
+    .due-date-input {
+        margin-left: 20px;
+    }
+
+    .add-button {
+        width: 50px;
+        margin-left: 40px;
+    }
+
+    .todo-list {
+        grid-template-columns: 30px 120px 100px 60px;
+    }
+}
+
 @media (min-width: 1375px) {
     .todo-list {
         display: grid;
@@ -108,3 +133,4 @@ body {
     border-color: #898af1;
     color: palevioletred;
 }
+
