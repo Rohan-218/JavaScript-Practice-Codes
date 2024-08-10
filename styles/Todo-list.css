@@ -1,0 +1,110 @@
+body {
+    background: rgba(139, 140, 225, 0.94) radial-gradient(5% 5%,dimgrey 80%,#0000 100%);
+    background-size: 20px 20px;
+    font-family: "Roboto", sans-serif;
+}
+
+.heading {
+    font-family: "Comic Sans MS", serif;
+    text-shadow: 4px 5px dimgrey;
+    font-size: 30px;
+    text-align: center;
+    align-content: center;
+    background-color: rgb(195, 171, 237);
+    height: 160px;
+}
+
+.add-todo-grid {
+    display: grid;
+    grid-template-columns: 200px 220px 50px;
+    row-gap: 50px;
+    column-gap: 10px;
+    justify-content: center;
+    align-content: center;
+    margin: 0 0 -16px 0;
+    background-color: #c7b6e6;
+    padding: 50px;
+    border-top: rgb(170, 156, 188);
+    border-top-style: solid ;
+    height: 60px;
+}
+
+.name-input,
+.due-date-input{
+    width: 190px;
+    padding:0 5px 0 10px;
+    height: 40px;
+    border: 0.5px solid rgba(192,192,192,0.8);
+    box-shadow: inset 4px 4px 10px rgba(0,0,0,0.07);
+    border-radius: 10px;
+}
+
+.name-input::placeholder {
+    padding:10px;
+}
+
+.due-date-input {
+    margin-left: 10px;
+}
+
+.add-button {
+    color: #353333;
+    background-color: #B9BAFA;
+    border-radius: 5px;
+    border-color: #abacf6;
+    width: 75px;
+    margin-left: 15px;
+    height: 35px;
+    align-self: center;
+}
+
+.add-button:hover {
+    color: #7375f1;
+    background-color: #abacf6;
+}
+
+
+.container {
+    display: flex;
+    flex:1;
+    justify-content: center
+}
+
+.todo-list {
+    display: grid;
+    grid-template-columns: 50px 200px 130px 70px;
+    align-content: center;
+    justify-content: center;
+    padding: 50px 80px 50px 40px;
+    column-gap: 25px;
+    row-gap: 25px;
+    font-size: 20px;
+    /*margin-left: -40px;*/
+    word-wrap: break-word;
+}
+
+@media (min-width: 920px) and (max-width: 1374px) {
+    .todo-list {
+        grid-template-columns: 50px 420px 170px 70px;
+    }
+}
+
+@media (min-width: 1375px) {
+    .todo-list {
+        display: grid;
+        grid-template-columns: 100px 700px 170px 70px;
+    }
+}
+
+.js-delete-button {
+    padding:5px;
+    align-content: center;
+    justify-self: center;
+    height: 40px;
+    width:60px;
+    border-radius: 5px;
+    background-color: lavender;
+    border-color: #898af1;
+    color: palevioletred;
+}
+
