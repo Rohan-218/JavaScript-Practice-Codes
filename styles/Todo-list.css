@@ -111,6 +111,19 @@ body {
 @media (min-width: 1080px) and (min-height: 2340px) {
     .todo-list {
         grid-template-columns: 50px 400px 150px 70px;
-        justify-content: center;
+        justify-self: center;
+    }
+
+    .flex-container {
+        width: 1430px;
+    }
+
+
+    .heading {
+        font-size: 4rem;
+    }
+
+    .add-todo-grid {
+        justify-items: center;
     }
 }
