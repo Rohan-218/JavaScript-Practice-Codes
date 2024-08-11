@@ -114,3 +114,9 @@ body {
         font-size: 1.5rem;
     }
 }
+
+@media (max-width: 1080px) and (max-height: 2340px) {
+    .todo-list {
+        grid-template-columns: 50px 400px 200px 70px;
+    }
+}
