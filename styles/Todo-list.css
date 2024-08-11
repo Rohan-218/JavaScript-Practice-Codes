@@ -10,17 +10,19 @@ body {
     background-color: #7dded5;
     display: flex;
     flex-direction: column;
-    width: 480px;
+    width: 100%;
 }
 
 .heading {
+    flex: 1;
+    padding: 50px 0 50px 0;
     text-align: center;
     font-family: "Comic Neue", cursive;
+    font-weight: 700;
     text-shadow: 4px 5px dimgrey;
     font-size: 3rem;
     align-content: center;
     background-color: rgb(195, 171, 237);
-    height: 160px;
 }
 
 .add-todo-grid {
@@ -83,73 +85,8 @@ body {
     padding: 50px 80px 50px 40px;
     column-gap: 25px;
     row-gap: 25px;
-    font-size: 20px;
+    font-size: 1.3rem;
     word-wrap: break-word;
-}
-
-@media (min-width: 300px) and (max-width: 530px) {
-    .add-todo-grid {
-        grid-template-columns: 50px 50px 50px;
-        padding-left: 0;
-        justify-content: center;
-    }
-
-    .name-input {
-        width: 120px;
-    }
-
-    .due-date-input {
-        width: 120px;
-    }
-
-    .todo-list {
-        grid-template-columns: 30px 120px 100px 60px;
-    }
-}
-
-@media (min-width: 645px) {
-    .add-todo-grid {
-        grid-template-columns: 200px 220px 50px;
-        column-gap: 10px;
-        padding: 60px;
-    }
-}
-
-@media (min-width: 920px) and (max-width: 1374px) {
-    .todo-list {
-        grid-template-columns: 50px 420px 170px 70px;
-    }
-
-    .add-todo-grid {
-        grid-template-columns: 250px 250px 50px;
-        column-gap: 10px;
-    }
-
-    .name-input {
-        width: 200px;
-        height: 50px
-    }
-
-    .due-date-input {
-        width: 200px;
-        height: 50px
-    }
-}
-
-@media (min-width: 1375px) {
-    .todo-list {
-        display: grid;
-        grid-template-columns: 100px 700px 170px 70px;
-    }
-
-    .add-todo-grid {
-        grid-template-columns: 220px 210px 50px;
-    }
-    .due-date-input,
-    .name-input{
-        width: 200px;
-        height: 50px;
-    }
 }
 
 .js-delete-button {
@@ -164,3 +101,16 @@ body {
     color: palevioletred;
 }
 
+@media (width >= 880px) {
+    .todo-list {
+        grid-template-columns: 50px 400px 200px 70px;
+        column-gap: 40px;
+    }
+}
+
+@media (width >=1250px) {
+    .todo-list {
+        grid-template-columns: 50px 700px 200px 70px;
+        font-size: 1.5rem;
+    }
+}
