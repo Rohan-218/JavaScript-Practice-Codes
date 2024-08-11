@@ -1,7 +1,6 @@
 body {
     background: rgba(139, 140, 225, 0.94) radial-gradient(5% 5%,dimgrey 80%,#0000 100%);
     background-size: 20px 20px;
-    font-weight: bold;
     color: rgb(50,50,50);
     justify-content: center;
 }
