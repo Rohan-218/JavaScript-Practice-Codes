@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Arrays and Loops</title>
+</head>
+<body>
+  <script>
+    /*const myArray = [10,25,13,74,85];
+    console.log(myArray);
+    console.log(myArray[0]);
+
+    console.log(typeof [1,2]);
+    console.log(Array.isArray([1,2]));
+
+    myArray.push(100);
+    myArray.splice(0,2);
+    // myArray.pop();
+    console.log(myArray);
+
+    let i = 1;
+
+    while (i <= 5) {
+      console.log(i);
+      i++;
+    }
+
+    for ( i = 5; i >= 1 ; i--) {
+      console.log(i);
+    }
+     */
+
+    const array1 = [1,2,3];
+    const array2 = array1;
+    array2.push(4);
+    console.log(array1);
+
+    const [firstValue, secondValue] = [1,2,3];
+
+    for ( let i = 1; i <= 10; i++) {
+      if (i === 3) {
+        continue;
+      }
+      console.log(i);
+      if (i === 8) {
+        break;
+      }
+    }
+
+
+  </script>
+</body>
+</html>
+
+
+
+
+

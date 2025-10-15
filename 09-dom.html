@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM</title>
+</head>
+<body>
+  <button>Hello</button>
+  <div class="button">
+    <button class="js-button">Second button </button>
+  </div>
+  <p>hdfsbk</p>
+<script>
+
+  // console.log(document.querySelector('p').innerText);
+  //
+  //
+  // console.log(document.querySelector('button').tagName);
+  // document.querySelector('button').innerHTML = 'Changed';
+  // console.log(document.querySelector('button').innerHTML);
+  //
+  // const buttonElement = document.querySelector('.js-button');
+  // console.log(buttonElement);
+  // console.log(document.querySelector('.button').innerHTML)
+
+  // document.body.innerHTML ='hello';
+  // document.title = 'Good!';
+
+  /*
+  console.log(document.title);
+  console.log(document.body);
+  console.log(typeof document.body);
+  console.log(document.body.innerHTML);
+  document.body.innerHTML = 'Changed';
+  document.title = 'Changed!';
+
+  document.body.innerHTML= ' <button>Changed </button>';
+   */
+
+  // document.querySelector('.button').innerHTML = 'hello'
+  let element = '';
+  function test () {
+    for(let i =0 ; i <= 5; i++) {
+      element += `
+      <div>${i}</div>
+      `;
+    }
+  }
+  test();
+  document.querySelector('.button').innerHTML += element;
+
+
+
+</script>
+</body>
+</html>
+
+
+
+
+

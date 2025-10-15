@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Objects</title>
+</head>
+<body>
+<script>
+  /*
+ const product = {
+  name: 'socks',
+  price: 1020,
+   rating: {
+    stars:4.5,
+    count: 87
+   },
+   fun: function f1() {
+    console.log('function inside object');
+   }
+ };
+ console.log(product);
+ con
+ sole.log(product.name);
+ console.log(product['name']);
+
+ product.name = 'cotton socks';
+ console.log(product);
+
+ product.newProperty = true;
+ console.log(product);
+
+ delete product.newProperty;
+ console.log(product);
+ console.log(product.rating.count);
+ product.fun();
+  */
+
+  const product2 = {
+    name: 'socks',
+    price: 1020,
+    rating: {
+      stars: 4.5,
+      count: 87
+    },
+    fun: function f1() {
+      console.log('function inside object');
+    }
+  };
+
+  console.log(JSON.stringify(product2));
+  const jsonString = JSON.stringify(product2);
+  console.log( JSON.parse(jsonString));
+  console.log('hello'.toUpperCase());
+  console.log('hello'.length);
+
+  const obj1 = {
+    message: 'hello'
+  };
+  const obj2 = obj1;
+  console.log(obj2);
+
+  obj1.message = 'Good job';
+  console.log(obj2);
+
+  obj2.message= 'hello';
+  console.log(obj1);
+
+  const obj3 = {
+    message: 'Good Morning',
+    price: 789
+  };
+
+  //const message = obj3.message;
+  const { message, price } = obj3;
+  console.log(message, price );
+
+  const obj4 = {
+    //message: message
+    message,
+    // method: function fun1() {
+    //   console.log('method');
+    // }
+    method() {
+      console.log('method');
+    }
+  };
+  console.log(obj4);
+  obj4.method();
+
+</script>
+</body>
+</html>
+
+
+
+
+

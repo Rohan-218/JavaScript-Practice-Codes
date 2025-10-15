@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercise 1</title>
+</head>
+<body>
+
+  Coffee : <button onclick="
+      coffee++;
+      cost+=5;
+      console.log(`coffee added, coffee = ${coffee}`);
+  ">+1</button>
+  <br><br>
+  Bagels : <button onclick="
+      bagel++;
+      cost+=3;
+      console.log(`Bagel added, Bagel = ${bagel}`);
+  ">+1</button>
+  <br><br>
+  Soup : <button onclick="
+      soup++;
+      cost+=9;
+      console.log(`Soup added, Soup = ${soup}`);
+  ">+1</button>
+  <br><br>
+  Check cost : <button onclick="
+   //console.log(`Cost : $${coffee*5 + bagel*3 + soup*9}`);
+   console.log('calculating...........')
+   console.log(`Cost of food: $${cost}`);
+   tax = cost*0.1;
+   console.log(`Tax added(10%): $${tax}`);
+   console.log(`Total Cost: $${cost+tax}`);
+  "> Check cost</button>
+
+<script>
+  let name = "Rohan";
+  console.log(`My name is: ${name}.`);
+
+  let cost = 0;
+  let coffee = 0;
+  let bagel = 0;
+  let soup = 0;
+  let tax = 0;
+</script>
+</body>
+</html>

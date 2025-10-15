@@ -1,0 +1,22 @@
+// Circle.call({}, 1, 2, 3);
+// Circle.apply({},[1, 2, 3]);
+
+
+// const anotherCircle = new Circle(4);
+//
+// anotherCircle.location = { x : 1 };
+// // anotherCircle['location'] = { x : 2 };
+//
+// delete anotherCircle.location;
+//
+// for ( let key in anotherCircle ) {
+//     if( typeof anotherCircle[ key ] !== 'function' )
+//         console.log(key, anotherCircle[key]);
+// }
+//
+// const keys = Object.keys(anotherCircle);
+// console.log(keys);
+//
+// if ('radius' in anotherCircle) {
+//     console.log('Circle has a Radius');
+// }

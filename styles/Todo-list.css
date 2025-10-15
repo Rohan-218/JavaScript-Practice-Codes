@@ -1,0 +1,135 @@
+body {
+    background: rgba(139, 140, 225, 0.94) radial-gradient(5% 5%,dimgrey 80%,#0000 100%);
+    background-size: 20px 20px;
+    font-weight: bold;
+    color: rgb(50,50,50);
+    justify-content: center;
+}
+
+.container-1 {
+    background-color: #7dded5;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.heading {
+    padding: 30px 0 30px 0;
+    text-align: center;
+    font-family: "Comic Neue", cursive;
+    font-weight: 700;
+    text-shadow: 4px 5px dimgrey;
+    font-size: 3rem;
+    align-content: center;
+    background-color: rgb(195, 171, 237);
+}
+
+.add-todo-grid {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0;
+    background-color: #c7b6e6;
+    padding: 50px 0 50px 0;
+    border-top: rgb(170, 156, 188);
+    border-top-style: solid ;
+}
+
+.name-input,
+.due-date-input{
+    width: 190px;
+    padding:0 5px 0 10px;
+    height: 40px;
+    border: 0.5px solid rgba(192,192,192,0.8);
+    box-shadow: inset 4px 4px 10px rgba(0,0,0,0.07);
+    border-radius: 10px;
+}
+
+.name-input::placeholder {
+    padding:10px;
+}
+
+.due-date-input {
+    margin-left: 10px;
+}
+
+.add-button {
+    color: #353333;
+    background-color: #B9BAFA;
+    border-radius: 5px;
+    border-color: #abacf6;
+    width: 75px;
+    margin-left: 25px;
+    height: 35px;
+}
+
+.add-button:hover {
+    color: #7375f1;
+    background-color: #abacf6;
+}
+
+.todo-list {
+    display: grid;
+    grid-template-columns: 50px 250px 100px 70px;
+    align-content: center;
+    justify-content: center;
+    padding: 50px 80px 50px 40px;
+    gap: 25px;
+    font-size: 1.3rem;
+    word-wrap: break-word;
+}
+
+.js-delete-button {
+    padding:5px;
+    align-content: center;
+    justify-self: center;
+    height: 40px;
+    width:60px;
+    border-radius: 5px;
+    background-color: lavender;
+    border-color: #898af1;
+    color: palevioletred;
+}
+
+@media (width <=600px) {
+
+    .heading {
+        height: 20px;
+        text-align: center;
+        font-size: xx-large;
+        z-index: 10;
+    }
+
+    .add-todo-grid {
+        padding: 35px 0 35px 0;
+    }
+
+    .todo-list {
+        grid-template-columns: 20px 220px 100px 50px;
+    }
+}
+
+@media (width >= 880px) {
+    .todo-list {
+        grid-template-columns: 50px 400px 200px 70px;
+        column-gap: 40px;
+    }
+}
+
+@media (min-width: 1080px) and (min-height: 2340px) {
+    .todo-list {
+        grid-template-columns: 50px 400px 150px 70px;
+        justify-self: center;
+    }
+
+    .flex-container {
+        width: 1430px;
+    }
+
+    .heading {
+        font-size: 4rem;
+    }
+
+    .add-todo-grid {
+        justify-items: center;
+    }
+}
